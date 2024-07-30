@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"motorodev\startup_stm32f103xb.o"
+"motorodev\main.o"
+"motorodev\stm32f1xx_it.o"
+"motorodev\stm32f1xx_hal_msp.o"
+"motorodev\stm32f1xx_hal_gpio_ex.o"
+"motorodev\stm32f1xx_hal_adc.o"
+"motorodev\stm32f1xx_hal_adc_ex.o"
+"motorodev\stm32f1xx_hal.o"
+"motorodev\stm32f1xx_hal_rcc.o"
+"motorodev\stm32f1xx_hal_rcc_ex.o"
+"motorodev\stm32f1xx_hal_gpio.o"
+"motorodev\stm32f1xx_hal_dma.o"
+"motorodev\stm32f1xx_hal_cortex.o"
+"motorodev\stm32f1xx_hal_pwr.o"
+"motorodev\stm32f1xx_hal_flash.o"
+"motorodev\stm32f1xx_hal_flash_ex.o"
+"motorodev\stm32f1xx_hal_exti.o"
+"motorodev\stm32f1xx_hal_tim.o"
+"motorodev\stm32f1xx_hal_tim_ex.o"
+"motorodev\system_stm32f1xx.o"
+--strict --scatter "MotorOdev\MotorOdev.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MotorOdev.map" -o MotorOdev\MotorOdev.axf

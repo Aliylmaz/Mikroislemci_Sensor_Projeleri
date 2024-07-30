@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"seriallab\startup_stm32f103xb.o"
+"seriallab\main.o"
+"seriallab\stm32f1xx_it.o"
+"seriallab\stm32f1xx_hal_msp.o"
+"seriallab\stm32f1xx_hal_gpio_ex.o"
+"seriallab\stm32f1xx_hal_tim.o"
+"seriallab\stm32f1xx_hal_tim_ex.o"
+"seriallab\stm32f1xx_hal_uart.o"
+"seriallab\stm32f1xx_hal.o"
+"seriallab\stm32f1xx_hal_rcc.o"
+"seriallab\stm32f1xx_hal_rcc_ex.o"
+"seriallab\stm32f1xx_hal_gpio.o"
+"seriallab\stm32f1xx_hal_dma.o"
+"seriallab\stm32f1xx_hal_cortex.o"
+"seriallab\stm32f1xx_hal_pwr.o"
+"seriallab\stm32f1xx_hal_flash.o"
+"seriallab\stm32f1xx_hal_flash_ex.o"
+"seriallab\stm32f1xx_hal_exti.o"
+"seriallab\system_stm32f1xx.o"
+--strict --scatter "SerialLab\SerialLab.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SerialLab.map" -o SerialLab\SerialLab.axf

@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"segmenetlabodev\startup_stm32f103xb.o"
+"segmenetlabodev\main.o"
+"segmenetlabodev\stm32f1xx_it.o"
+"segmenetlabodev\stm32f1xx_hal_msp.o"
+"segmenetlabodev\stm32f1xx_hal_gpio_ex.o"
+"segmenetlabodev\stm32f1xx_hal_tim.o"
+"segmenetlabodev\stm32f1xx_hal_tim_ex.o"
+"segmenetlabodev\stm32f1xx_hal.o"
+"segmenetlabodev\stm32f1xx_hal_rcc.o"
+"segmenetlabodev\stm32f1xx_hal_rcc_ex.o"
+"segmenetlabodev\stm32f1xx_hal_gpio.o"
+"segmenetlabodev\stm32f1xx_hal_dma.o"
+"segmenetlabodev\stm32f1xx_hal_cortex.o"
+"segmenetlabodev\stm32f1xx_hal_pwr.o"
+"segmenetlabodev\stm32f1xx_hal_flash.o"
+"segmenetlabodev\stm32f1xx_hal_flash_ex.o"
+"segmenetlabodev\stm32f1xx_hal_exti.o"
+"segmenetlabodev\system_stm32f1xx.o"
+--strict --scatter "SegmenetLabOdev\SegmenetLabOdev.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SegmenetLabOdev.map" -o SegmenetLabOdev\SegmenetLabOdev.axf

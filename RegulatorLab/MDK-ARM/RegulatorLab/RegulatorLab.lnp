@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"regulatorlab\startup_stm32f103xb.o"
+"regulatorlab\main.o"
+"regulatorlab\stm32f1xx_it.o"
+"regulatorlab\stm32f1xx_hal_msp.o"
+"regulatorlab\stm32f1xx_hal_gpio_ex.o"
+"regulatorlab\stm32f1xx_hal_tim.o"
+"regulatorlab\stm32f1xx_hal_tim_ex.o"
+"regulatorlab\stm32f1xx_hal.o"
+"regulatorlab\stm32f1xx_hal_rcc.o"
+"regulatorlab\stm32f1xx_hal_rcc_ex.o"
+"regulatorlab\stm32f1xx_hal_gpio.o"
+"regulatorlab\stm32f1xx_hal_dma.o"
+"regulatorlab\stm32f1xx_hal_cortex.o"
+"regulatorlab\stm32f1xx_hal_pwr.o"
+"regulatorlab\stm32f1xx_hal_flash.o"
+"regulatorlab\stm32f1xx_hal_flash_ex.o"
+"regulatorlab\stm32f1xx_hal_exti.o"
+"regulatorlab\system_stm32f1xx.o"
+--strict --scatter "RegulatorLab\RegulatorLab.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RegulatorLab.map" -o RegulatorLab\RegulatorLab.axf

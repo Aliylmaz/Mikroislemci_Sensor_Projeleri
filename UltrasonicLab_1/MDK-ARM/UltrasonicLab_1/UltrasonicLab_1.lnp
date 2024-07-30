@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"ultrasoniclab_1\startup_stm32f103xb.o"
+"ultrasoniclab_1\main.o"
+"ultrasoniclab_1\stm32f1xx_it.o"
+"ultrasoniclab_1\stm32f1xx_hal_msp.o"
+"ultrasoniclab_1\stm32f1xx_hal_gpio_ex.o"
+"ultrasoniclab_1\stm32f1xx_hal_tim.o"
+"ultrasoniclab_1\stm32f1xx_hal_tim_ex.o"
+"ultrasoniclab_1\stm32f1xx_hal.o"
+"ultrasoniclab_1\stm32f1xx_hal_rcc.o"
+"ultrasoniclab_1\stm32f1xx_hal_rcc_ex.o"
+"ultrasoniclab_1\stm32f1xx_hal_gpio.o"
+"ultrasoniclab_1\stm32f1xx_hal_dma.o"
+"ultrasoniclab_1\stm32f1xx_hal_cortex.o"
+"ultrasoniclab_1\stm32f1xx_hal_pwr.o"
+"ultrasoniclab_1\stm32f1xx_hal_flash.o"
+"ultrasoniclab_1\stm32f1xx_hal_flash_ex.o"
+"ultrasoniclab_1\stm32f1xx_hal_exti.o"
+"ultrasoniclab_1\system_stm32f1xx.o"
+--strict --scatter "UltrasonicLab_1\UltrasonicLab_1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UltrasonicLab_1.map" -o UltrasonicLab_1\UltrasonicLab_1.axf
